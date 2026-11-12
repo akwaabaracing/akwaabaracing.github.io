@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akwaaba Racing – race cars and motorcycles on Ghana's roads</title>
+<meta name="description" content="Akwaaba Racing is a 3D racing game for Android set on Ghana's roads – from the N6 to the Kwahu hills. Nine cars, five motorcycles, four tracks and a six-round Grand Tour.">
+<meta property="og:title" content="Akwaaba Racing">
+<meta property="og:description" content="Race cars and motorcycles on Ghana's roads, from the N6 to the Kwahu hills.">
+<meta property="og:image" content="img/feature.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#111214">
+<link rel="icon" href="img/icon.png">
+<style>
+:root{--bg:#111214;--panel:#1b1c20;--text:#ececec;--dim:#a9abb3;--gold:#FCD116;--red:#CE1126;--green:#006B3F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+a{color:var(--gold)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.stripes{height:8px;background:linear-gradient(var(--red) 0 33%,var(--gold) 33% 66%,var(--green) 66%)}
+header{position:relative;min-height:78vh;display:flex;align-items:flex-end;background:url(img/hero.jpg) center/cover no-repeat}
+header::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,12,.92),rgba(10,10,12,.55) 55%,rgba(10,10,12,.15)),linear-gradient(0deg,rgba(17,18,20,1),rgba(17,18,20,0) 40%)}
+.hero{position:relative;padding:60px 20px 70px;width:100%}
+body{overflow-x:hidden}
+nav{position:absolute;top:0;left:0;right:0;z-index:2}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+nav .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.5px;text-decoration:none;color:var(--text)}
+nav .brand img{width:34px;height:34px;border-radius:8px}
+nav .links a{color:var(--text);text-decoration:none;margin-left:20px;font-size:.95rem;opacity:.85}
+nav .links a:hover{opacity:1;color:var(--gold)}
+h1{font-family:"Segoe UI Black","Arial Black",Arial,sans-serif;font-size:clamp(2.6rem,7vw,5rem);line-height:.95;margin:0;color:var(--gold);letter-spacing:1px}
+h1 span{display:block;color:#fff;font-size:.55em;letter-spacing:.35em;margin-top:8px}
+.tag{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:560px;margin:18px 0 26px;color:#e3e3e3}
+.cta{display:inline-flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none}
+.btn.gold{background:var(--gold);color:#111}
+.btn.ghost{border:2px solid rgba(255,255,255,.6);color:#fff}
+.soon{font-size:.85rem;color:var(--dim);margin-top:12px}
+section{padding:64px 0}
+h2{font-size:clamp(1.6rem,3.5vw,2.3rem);margin:0 0 8px}
+.lead{color:var(--dim);margin:0 0 30px;max-width:720px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--panel);border-radius:14px;padding:22px;border-top:4px solid var(--gold)}
+.card h3{margin:0 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--dim);font-size:.96rem}
+.card.r{border-color:var(--red)}.card.g{border-color:var(--green)}
+.shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.shots img{width:100%;border-radius:12px;display:block;aspect-ratio:16/9;object-fit:cover;background:#222}
+ul.feat{columns:2 280px;padding-left:20px;margin:0}
+ul.feat li{margin:0 0 8px;break-inside:avoid}
+.alt{background:#16171a}
+footer{padding:36px 0 50px;color:var(--dim);font-size:.92rem}
+footer .row{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between}
+footer a{color:var(--dim)}
+.social a{margin-right:14px}
+@media (max-width:640px){nav .links{display:none}header{min-height:70vh}}
+</style>
+</head>
+<body>
+<header>
+  <nav><div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="">Akwaaba Racing</a>
+    <div class="links"><a href="#tracks">Tracks</a><a href="#garage">Garage</a><a href="#modes">Modes</a><a href="#screens">Screenshots</a><a href="#support">Support</a></div>
+  </div></nav>
+  <div class="wrap hero">
+    <h1>AKWAABA<span>RACING</span></h1>
+    <p class="tag">Race cars and motorcycles on Ghana's roads – from the N6 to the Kwahu hills.</p>
+    <div class="cta">
+      <a class="btn gold" href="#play" id="play">Coming soon to Google Play</a>
+      <a class="btn ghost" href="#screens">See the game</a>
+    </div>
+    <p class="soon">Android · Free to play with optional purchases · Launching first in Ghana</p>
+  </div>
+</header>
+<div class="stripes"></div>
+
+<section id="tracks"><div class="wrap">
+  <h2>Tracks inspired by Ghana</h2>
+  <p class="lead">Weather and time of day change the feel of every race.</p>
+  <div class="grid">
+    <div class="card"><h3>N6 Corridor Circuit</h3><p>Fast dual-carriageway racing from Amasaman under the Pokuase Interchange to Circle.</p></div>
+    <div class="card g"><h3>Kwahu Mountains</h3><p>Climb from Nkawkaw to the Kwahu ridge – with an Easter Festival edition full of paragliders, banners and food stalls.</p></div>
+    <div class="card r"><h3>Asante Forest Rally</h3><p>Red-earth roads through a forest village.</p></div>
+    <div class="card"><h3>Neo-Accra 2099 Skyway</h3><p>An elevated night circuit in a future Accra.</p></div>
+  </div>
+</div></section>
+
+<section id="garage" class="alt"><div class="wrap">
+  <h2>Nine cars. Five motorcycles.</h2>
+  <p class="lead">From the Kwaku 1.6 Saloon and the Tro-Tro Express to rally cars, GTs, the Nyame X Hypercar and the Black Star Sovereign – plus motorcycles from the Okada 150 Street to the Volta GP Prototype. Every vehicle has its own engine sound, gearbox and handling.</p>
+  <ul class="feat">
+    <li>Paints, finishes, liveries and number plates</li>
+    <li>Rims, horns, victory music and rider gear</li>
+    <li>Earn Coins by racing to unlock vehicles and upgrades</li>
+    <li>Season Pass with free and premium rewards</li>
+  </ul>
+</div></section>
+
+<section id="modes"><div class="wrap">
+  <h2>Ways to play</h2>
+  <div class="grid">
+    <div class="card"><h3>Grand Tour</h3><p>A six-round championship across Ghana.</p></div>
+    <div class="card r"><h3>Street Rush</h3><p>Open roads with traffic, checkpoints and challenges.</p></div>
+    <div class="card g"><h3>Quick Race &amp; Time Trial</h3><p>Any track, any field – or race your own ghost.</p></div>
+    <div class="card"><h3>Motorcycle combat</h3><p>Optional kicks, shoves and power-ups in bike races.</p></div>
+  </div>
+  <p class="lead" style="margin-top:26px">Driving profiles for Beginner, Intermediate and Professional riders, on-screen buttons or tilt steering (switchable from the pause menu), game-controller support and graphics presets for every phone.</p>
+</div></section>
+
+<section id="screens" class="alt"><div class="wrap">
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="img/shot1.jpg" alt="Asante Forest Rally" loading="lazy">
+    <img src="img/shot2.jpg" alt="Motorcycle race in the Kwahu Mountains" loading="lazy">
+    <img src="img/shot3.jpg" alt="Racing on the N6" loading="lazy">
+    <img src="img/shot4.jpg" alt="Neo-Accra 2099 night race" loading="lazy">
+    <img src="img/shot5.jpg" alt="Rain at dusk on the N6" loading="lazy">
+    <img src="img/shot6.jpg" alt="Under the Pokuase Interchange" loading="lazy">
+  </div>
+</div></section>
+
+<section id="fair"><div class="wrap">
+  <h2>Fair to play</h2>
+  <p class="lead">Everything that affects racing is earned by playing. Optional purchases (Diamonds and the Supporter Edition) are cosmetic or convenience items. Sign in with Google Play Games to restore purchases on a new phone. An optional short video gives bonus Coins, up to five a day. Your progress is stored on your phone.</p>
+</div></section>
+
+<section id="support" class="alt"><div class="wrap">
+  <h2>Support</h2>
+  <p class="lead">Questions, bug reports or feedback: <a href="mailto:akwaabaracing@gmail.com">akwaabaracing@gmail.com</a></p>
+  <div class="grid">
+    <div class="card"><h3>Privacy policy</h3><p><a href="privacy.html">Read how the game handles data</a></p></div>
+    <div class="card r"><h3>Delete your account</h3><p><a href="delete-account.html">How to delete your purchase account</a></p></div>
+  </div>
+</div></section>
+
+<div class="stripes"></div>
+<footer><div class="wrap row">
+  <div>© 2026 Akwaaba Racing · Made in Ghana</div>
+  <div class="social">
+    <!-- Social links: fill in once the accounts exist -->
+    <a href="mailto:akwaabaracing@gmail.com">Email</a>
+  </div>
+  <div><a href="privacy.html">Privacy</a> · <a href="delete-account.html">Delete account</a></div>
+</div></footer>
+</body>
+</html>
